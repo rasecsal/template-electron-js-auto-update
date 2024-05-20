@@ -7,7 +7,7 @@
 	"repository": {
 		"type": "git",
 		"token": "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",
-		"url": "https://github.com/GrupoAvilaMx/bots-prod"
+		"url": "https://github.com/GrupoAvilaMx/template-electron-js-auto-update"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,7 @@
 	"publish": {
 		"provider": "github",
 		"owner": "GrupoAvilaMx",
-		"repo": "https://github.com/GrupoAvilaMx/bots-prod"
+		"repo": "https://github.com/GrupoAvilaMx/template-electron-js-auto-update"
 	},
 	"author": "",
 	"license": "ISC",
