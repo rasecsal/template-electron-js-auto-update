@@ -1,0 +1,54 @@
+{
+	"name": "template-js-electron-autoupdater",
+	"productName": "MyApp",
+	"version": "0.0.12",
+	"description": "",
+	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"token": "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",
+		"url": "https://github.com/GrupoAvilaMx/bots-prod"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "electron .",
+		"build": "electron-builder build --win --linux --publish never",
+		"deploy": "electron-builder build --win --linux --publish always"
+	},
+	"files": [
+		"build/**/*"
+	],
+	"publish": {
+		"provider": "github",
+		"owner": "GrupoAvilaMx",
+		"repo": "https://github.com/GrupoAvilaMx/bots-prod"
+	},
+	"author": "",
+	"license": "ISC",
+	"build": {
+		"appId": "template-js-electron-autoupdater",
+		"extends": null,
+		"directories": {
+			"buildResources": "assets"
+		},
+		"win": {
+			"target": "nsis"
+		},
+		"linux": {
+			"target": "AppImage"
+		},
+		"publish": [
+			{
+				"provider": "github",
+				"token": "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"
+			}
+		]
+	},
+	"devDependencies": {
+		"electron": "^30.0.6",
+		"electron-builder": "^24.13.3"
+	},
+	"dependencies": {
+		"electron-updater": "^6.1.8"
+	}
+}
